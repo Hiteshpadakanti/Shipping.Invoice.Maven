@@ -43,12 +43,13 @@
 								<button id="moveButton" label="Move" />
 								</hlayout>
 							</row>
-							<row spans="2" align="right">
-								<hlayout>
+							<row spans="2">
+								<vlayout>
 									<button id="addButton" label="Add" />
 									<button id="deleteButton" label="Delete" />
 									<button id="find" label="find by selection"/>
-								</hlayout>
+									<button id="update" label="update data ragne"/>
+								</vlayout>
 							</row>
 						</rows>
 					</grid>

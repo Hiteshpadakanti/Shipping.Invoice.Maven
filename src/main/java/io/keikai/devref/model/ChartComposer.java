@@ -11,6 +11,8 @@ import org.zkoss.zk.ui.select.annotation.Wire;
 import org.zkoss.zk.ui.util.Notification;
 import org.zkoss.zul.*;
 
+import java.util.Iterator;
+
 /**
  * Demonstrate chart related API usage
  * 
@@ -91,6 +93,15 @@ public class ChartComposer extends SelectorComposer<Component> {
 			}
 		}
 		Notification.show("no chart found in the selection");
+	}
+
+	@Listen("onClick = #update")
+	public void updateData(){
+		Iterator<Chart> iterator = chartList.getSelection().iterator();
+		if (iterator.hasNext()){
+			Chart chart = iterator.next();
+			chart.setDataRange(Ranges.range(ss.getSelectedSheet(), ss.getSelection()));
+		}
 	}
 
 	public void add() {

@@ -1,4 +1,4 @@
-# Keikai Developer Reference Example Project
+# Hitesh Developer Reference Example Project
 Keikai, effortlessly build spreadsheet-driven web apps.
 
 This project contains the sample code of [Keikai Developer Reference](https://doc.keikai.io/dev-ref).
